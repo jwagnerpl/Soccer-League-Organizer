@@ -13,7 +13,6 @@ public class Teams {
       FileOutputStream fos = new FileOutputStream("teams.ser");
       ObjectOutputStream oos = new ObjectOutputStream(fos);
     ) {
-    		System.out.println("it was success");
       oos.writeObject(teams);
     } catch(IOException ioe) {
       System.out.println("Problem saving teams");
@@ -21,7 +20,8 @@ public class Teams {
     }
   }
   
-  public static List<Team> load() {
+  @SuppressWarnings("unchecked")
+public static List<Team> load() {
     List<Team> teams = new ArrayList<Team>();
     try (
       FileInputStream fis = new FileInputStream("teams.ser");
