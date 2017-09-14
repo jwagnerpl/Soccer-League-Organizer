@@ -1,0 +1,9 @@
+/.DS_Store
+/.gitattributes
+/com/
+/players.ser
+/teams.ser
+/.classpath
+/.project
+/LeagueManager.class
+/MainMenu.class
